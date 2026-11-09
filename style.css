@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#landing_page_first_half {
+  height: 100vh;
+  width: 50vw;
+  background-color: black;
+}
+#landing_page_second_half {
+  height: 100vh;
+  width: 50vw;
+  background-color: #575a84;
+}
+#heading_text {
+  color: #575a84;
+}
+#landing_page_image {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+#ip_text {
+  color: #b8bccc;
+}
+#get_started_btn {
+  color: #b8bccc;
+  border: 2px solid #b8bccc;
+  width: 60%;
+}
+#user_location_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+#text_section {
+  /* height:30%; */
+  color: #5c5e66;
+}
+#ip_address_second_page,
+#latitude_tag,
+#longitude_tag,
+#city_tag,
+#region_tag,
+#organisation_tag,
+#host_tag {
+  color: #b8bccc;
+}
+#map_section {
+  /* height:70%; */
+  background-color: #575a84;
+}
+#mapFrame {
+  height: 500px;
+}
+
+#more_information_section {
+  background-color: black;
+}
+.light_grey {
+  color: #b8bccc;
+}
+.dark_grey {
+  color: #5c5e66;
+}
+#search_bar {
+  background-color: black;
+  border: 2px solid #575a84;
+}
+#search_bar::placeholder {
+  color: #b8bccc;
+}
+#post_office_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gridCard {
+  background-color: #575a84;
+  color: #b8bccc;
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="landing_page" class="d-flex">
+      <div id="landing_page_first_half" class="p-3">
+        <p id="heading_text" class="fs-2 fw-bold">Post Office Application</p>
+        <p class="text-white fs-6">
+          This Application Allows you to extract information about the nearest
+          Post Offices, based on your location.
+        </p>
+        <img
+          id="landing_page_image"
+          src="landing_page_image.png"
+          alt="landing_page_image"
+        />
+      </div>
+      <div
+        id="landing_page_second_half"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <div class="d-flex flex-column align-items-center">
+          <p id="ip_text" class="fs-3 fw-bold">
+            Your Current IP Address is
+            <span id="ip_address_first_page" class="text-white"></span>
+          </p>
+          <button id="get_started_btn" class="btn fs-5">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div id="user_location_page" class="d-none">
+      <div id="text_section">
+        <div class="ps-4 pt-4">
+          <p class="fs-4 fw-bold">
+            IP Address:
+            <span id="ip_address_second_page"></span>
+          </p>
+        </div>
+        <div class="m-4 d-flex align-item-center justify-content-between">
+          <div class="d-flex flex-column">
+            <p class="fs-4 fw-bold mb-0">
+              Lat: <span id="latitude_tag"></span>
+            </p>
+            <p class="fs-4 fw-bold">Long: <span id="longitude_tag"></span></p>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="fs-4 fw-bold mb-0">City: <span id="city_tag"></span></p>
+            <p class="fs-4 fw-bold">Region: <span id="region_tag"></span></p>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="fs-4 fw-bold mb-0">
+              Organisation: <span id="organisation_tag"></span>
+            </p>
+            <p class="fs-4 fw-bold">Hostname: <span id="host_tag"></span></p>
+          </div>
+        </div>
+      </div>
+      <div id="map_section">
+        <p class="fs-2 fw-bold text-white text-center pt-4 pb-4">
+          Your Current Location
+        </p>
+        <div id="map_frame" class="ps-5 pe-5 pb-5 map-container w-100">
+          <iframe
+            id="mapFrame"
+            src="https://maps.google.com/maps?q=28.6139,77.2090&z=15&output=embed"
+            allowfullscreen
+            loading="lazy"
+            class="w-100"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div id="more_information_section">
+        <p class="light_grey text-center p-4 fs-3 fw-bold">
+          More Information About You
+        </p>
+        <p class="dark_grey ps-4 mb-1 fw-bold">Time Zone: <span id="timezone" class="light_grey"></span></p>
+        <p class="dark_grey ps-4 mb-1 fw-bold">Date And Time: <span id="date_and_time" class="light_grey"</p>
+        <p class="dark_grey ps-4 mb-1 fw-bold">Pincode: <span id="pincode" class="light_grey"</p>
+        <p class="dark_grey ps-4 fw-bold">Message: <span id="message" class="light_grey"></span></p>
+        <p class="light_grey text-center fs-3 pb-2 fw-bold">
+          Post Offices Near You
+        </p>
+        <div class="m-3 pb-4">
+          <input
+            id="search_bar"
+            type="text"
+            placeholder="Search By Name"
+            class="form-control rounded-0 text-white"
+          />
+        </div>
+        <div id="post_office_cards" class="pb-3">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"
+  ></script>
+</html>
